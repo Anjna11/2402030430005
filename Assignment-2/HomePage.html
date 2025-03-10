@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HomePage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <style> 
+            .logo{
+                height: 95px;
+                width: 120px;
+                transform: scaleX(-1);
+                padding-top: 20px;
+                margin-left: 70px; 
+                }   
+            .logoname{
+                font-size: 135%;
+                margin-left: 38px;
+                color: #1B1F26;
+            }         
+            ul {
+                overflow: hidden;
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;  
+            }
+            li a {
+                flex-direction: column-reverse;
+                color: #1B1F26;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: underline;
+                margin-right: 62px;
+            }
+            .hbar {
+                width: 1300px;
+                margin: 10px;
+                border-top: 2px solid #1B1F26;
+                border-radius: 20px;
+                font-size: 0px;
+                margin-top: 141px;
+                margin-bottom: 50px; 
+            }
+            .HomePageImg1{
+                height: 610px;
+                width: 1100px;
+                border-radius: 5px;
+            }
+            .title{
+                font-size: 300%;
+                margin-top: 40px;
+                color: #1B1F26;
+                text-align: center;
+                font-style: italic;
+            }
+            .HomePageImg2_3{
+                height: 410px; 
+                width: 800px; 
+                margin-left: 73px; 
+                margin-top: 85px; 
+                border-radius: 5px;
+            }
+
+            .button-73 {
+                appearance: none;
+                background-color: #FFFFFF;
+                border-radius:12px;
+                border-style: none;
+                box-shadow: #1B1F26 0 -6px 3px inset;
+                box-sizing: border-box;
+                color: #1B1F26;
+                cursor: pointer;
+                display: inline-block;
+                font-family: -apple-system,sans-serif;
+                font-size: 1.2rem;
+                font-weight: 700;
+                letter-spacing: -.24px;
+                margin: 0;
+                outline: none;
+                padding: 1rem 1.3rem;
+                quotes: auto;
+                text-align: center;
+                text-decoration: none;
+                transition: all .15s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .button-73:hover {
+                background-color: #e09c3c;
+                box-shadow: #e1a31d 0 -3px 6px inset;
+                transform: scale(1.125);
+            }
+
+            .button-73:active {
+                transform: scale(1.025);
+            }
+
+            @media (min-width: 768px) {
+                .button-73 {
+                    font-size: 1.5rem;
+                    padding: .75rem 2rem;
+                }
+            }
+            .footer-container {
+              max-width: 1200px;
+              margin: 0 auto;
+            }
+
+            .social-icons {
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+            }
+
+            .social-icon img {
+              width: 27px;
+              height: 27px;
+              transition: transform 0.3s ease;
+            }
+
+            .social-icon img:hover {
+              transform: scale(1.2);
+            }
+
+            #menu_div li a:hover {
+                color: #FAA42D;
+            }
+
+        </style>
+    </head>
+    <body style="margin: 0;">
+        <div style="position: fixed; width: 100%; height: 150px; display: flex; background-color: white;">
+            <div>
+                <img class="logo" src="Images/Logo.jpg">
+                <div class="logoname">HEAVENVIBE</div>
+            </div>
+            <div style="margin-left: auto; font-size: 152%; margin-top: 78px; margin-right: 225px;">
+                <ul id="menu_div">
+                    <li>
+                        <a href="HomePage.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#inspiration">INSPIRATION</a>
+                    </li>
+                    <li>
+                        <a href="furniture.html">FURNITURE</a>
+                    </li>
+                    <li>
+                        <a href="decore.html">DECORE</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div style="padding-top: 150px;">
+            
+            <div id="home" style="margin-top: 80px; display: flex;">
+                <div style="margin-left: 73px; margin-right: 177px;">
+                    <div style="font-size: 550%;">
+                        <div style="color: #FAA42D;">DESIGN</div> 
+                        <div style="color: #1B1F26;">YOUR</div>
+                        <div style="color: #FAA42D;">HEAVEN</div>
+                    </div>
+                    <div style="font-size: 25px;">
+                        Transform your space into a<br> 
+                        sanctuary of style, where every<br> 
+                        corner whispers comfort and every<br>
+                        detail sparkles with charm    
+                    </div>
+                </div>
+                <img class="HomePageImg1" src="Images/HomePage1.jpg">
+            </div>
+
+            <div style="display: flex; justify-self: center;">
+                <div class="hbar"></div>
+            </div>
+
+            <div id="inspiration">
+                <div class="title">INSPIRATION</div>
+                
+                <div style="display: flex;">
+                    <img class="HomePageImg2_3" src="Images/HomePage2.jpg">
+                    <div style="margin-top: 85px; margin-left: 40px; margin-right: 177px;">
+                        <div style="font-size: 240%; color: #FAA42D;">INTERIOR DESIGN</div>
+                        <div style="margin-top: 10px; font-size: 35px;">
+                            Experience the art of interior design with custom solutions that turn 
+                            ordinary spaces into extraordinary ones. Discover the perfect balance of 
+                            function and beauty with designs that make every room feel like home.
+                        </div>
+                        <button style="color: #1B1F26; margin-top: 20px;" class="button-73" role="button" onclick="window.open('interiordesign.html')">MORE</button>
+                    </div>    
+                </div> 
+
+                <div style="display: flex;">
+                    <img class="HomePageImg2_3" src="Images/HomePage3.jpg">
+                    <div style="margin-top: 85px; margin-left: 40px; margin-right: 177px;">
+                        <div style="font-size: 240%; color: #FAA42D;">EXTERIOR DESIGN</div>
+                        <div style="margin-top: 10px; font-size: 35px;">
+                            Create an inviting and striking first impression with exterior designs that 
+                            reflect your personal taste. Our exterior designs turn the outside of your 
+                            home into a beautiful, functional masterpiece.
+                        </div> 
+                        <button style="color: #1B1F26; margin-top: 20px;" class="button-73" role="button" onclick="window.open('exteriordsign.html')" >MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-self: center;">
+                <div class="hbar"></div>
+            </div>
+
+            <div  id="aboutus" class="title" style="display: flex; justify-self: center;">
+                ABOUT US
+            </div>
+            
+            <div style="display: flex; margin-top: 85px; margin-bottom: 90px;">
+                <div>
+                    <img class="logo" src="Images/Logo.jpg">
+                    <div class="logoname">HEAVENVIBE</div>
+                </div>
+                        
+                <div style="margin-left: 200px; font-size: 176%;">QUICK LINKS
+                    <div style="font-size: 75%; margin-top: 20px; font-style: oblique;">
+                        <div style="margin-bottom: 7px;">
+                            <a style="color: black; text-decoration: none;" href="aboutus.html">About Us</a>
+                        </div>
+                        <div style="margin-bottom: 7px;">
+                            <a style="color: black; text-decoration: none;" href="contactus.html">Contact Us</a>
+                        </div>
+                        <div style="margin-bottom: 7px;">
+                            <a style="color: black; text-decoration: none;" href="return&refunds.html">Return Policy</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-left: 200px; font-size: 176%;">HELPDESK
+                    <div style="font-size: 75%; margin-top: 20px; font-style: oblique;">
+                        <div style="margin-bottom: 7px;">
+                            <a style="color: black; text-decoration: none;" href="FAQs.html">FAQs</a>
+                        </div>
+                        <div style="margin-bottom: 7px;">
+                            <a style="color: black; text-decoration: none;" href="shippingpolicy.html">Shipping Policy</a>
+                        </div>
+                        <div style="margin-bottom: 7px;">
+                            <a style="color: black; text-decoration: none;" href="return&refunds.html">Refunds</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-left: 200px; font-size: 176%;">CONTACT
+                    <div style="font-size: 75%; margin-top: 20px; font-style: oblique;">
+                        <div style="margin-bottom: 7px;">+7265095483</div>
+                        <div style="margin-bottom: 7px;">we@heavenvibe.com</div>
+                        <div class="footer-container">
+                            <div class="social-icons">
+                              <a href="https://www.instagram.com" class="social-icon" id="instagram" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+                              </a>
+                              <a href="https://www.facebook.com" class="social-icon" id="facebook" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                              </a>
+                            </div>
+                          </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let anchorSelector = 'a[href^="#"]';
+        let anchorList =
+            document.querySelectorAll(anchorSelector);
+        
+        anchorList.forEach(link => {
+            link.onclick = function (e) {
+                e.preventDefault();
+
+                let destination =
+                    document.querySelector(this.hash);
+
+                destination.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    </script>
+</html>
